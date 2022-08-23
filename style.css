@@ -270,22 +270,22 @@
 		font-family: candara;
 		font-size: 20px;
 		margin-top: 20px;
+		display: flex;
+		justify-content: space-around;
 	}
 
 	.footer {
 		border-top: 5px solid #313568;
-		background-color: green;
+		background: linear-gradient(70deg, #03383c, #3fa0a7);
 	}
 
 	.fim {
+		list-style: none;
+		text-align: center;
 		padding-bottom: 30px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		gap: 90px;
 		margin-top: 35px;
-	}
-	.contatos {
-		background-color: black;
-		width: 30px;
-		height: 30px;
 	}
