@@ -1,0 +1,265 @@
+/*Comecinho do css, deixando bonitin :]*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+
+	}
+
+	body {
+		font-size: 100%;
+		background: linear-gradient(45deg, #03383c, #3fa0a7);
+		/*background-color: #3FA796;*/
+		color: white;
+	}
+
+	main {
+		margin: ;
+		padding: ;
+		width: ;
+		height: ;
+	}
+
+	.apresentacao {
+		border-top: 5px solid #313568;
+		margin-bottom: 80px;
+		padding-top: 55px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 150px;
+	}
+
+	.apresentacao-texto {
+		max-width: 600px;
+		font-family: candara;
+		font-size: 18px;
+	}
+
+	.minha-foto {
+		border-radius: 40px;
+
+	}
+
+	.cabecalho-links {
+		display: flex;
+		justify-content: right;
+		gap: 10px;
+		padding-bottom: 20px;
+		padding-right: 25px;
+		padding-top: 20px;
+	}
+
+	.cabecalho-item {
+		font-family: candara, sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		border-radius: 10px;
+	}
+
+	/*animando os itens*/
+	.cabecalho-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:;
+		height: 30px;
+		color: white;
+	}
+	.cabecalho-item {
+		transition: background-color 0.7s;
+		width: 100px;
+	}
+
+	.cabecalho-item:hover {
+		background-color: #2A0944;
+		width: ;
+
+	}
+
+	.cabecalho-nome {
+		padding-left: 105px;
+		padding-top: 15px;
+		float: left;
+		align-items: left;
+	}
+
+	.nome {
+		text-transform: uppercase;
+		font-family: candara;
+		color: white;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.titulo-projetos {
+		text-align: center;
+		width: 0px block;
+		font-family: candara;
+		font-size: 25px;
+	}
+
+	.meus-projetos {
+		font-family: candara, serif;
+		text-align: center;
+		padding-top: 35px;
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+		justify-content: center;
+		/*align-items: baseline;*/
+		flex-wrap: wrap-reverse;
+	}
+
+	div.projeto-key, div.projeto-sk8, div.projeto-estrelas {
+		color: white;
+		border: none;
+		width: 300px;
+		border-radius: 8px;
+		background: linear-gradient(200deg, #0a544a, #3fa0a7);
+	}
+
+	.titulo-kpp {
+		text-transform: uppercase;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		font-family: candara, serif;
+	}
+
+	.titulo-git {
+		font-family: candara, serif;
+		text-align: center;
+		font-size: 33px;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+
+	.titulo-hab {
+		font-family: candara, serif;
+		text-align: center;
+		font-size: 33px;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+
+	.titulo-contato {
+		font-family: candara;
+		text-align: center;
+		font-size: 33px;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+
+	.texto-projeto {
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.minha-foto {
+		width: 200px;
+		height: 250px;
+		filter: drop-shadow(1px 1px 10px black);
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	}
+	/* TRANSIÇÃO COM BLUR NA FRENTE QUE APÓS SOBREPOSSIÇÃO DO MOUSE O BLUR SOME :].blurtransition {
+		filter: blur(10px);
+		transition: filter 0.2s;
+	}
+	.blurtransition:hover {
+		filter: blur(0px);
+	}*/
+
+	/*CRIAÇÃO DO GRÁFICOOO :)*/
+
+
+/*TEEEESTEE*/
+ .tudo {
+ 	display: flex;
+ 	background: linear-gradient(70deg, #03383c, #3fa0a7);
+ 	width: 800px;
+ 	height: 400px;
+ 	align-items: center;
+ 	padding-left: ;
+ 	margin-left: 250px;
+ 	padding-top: 20px;
+ 	margin-top: 25px;
+ 	border-radius: 14px;
+ }
+
+ .graf {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	text-align: center;
+ 	height: 400px;
+ 	padding-top: 15px;
+ 	width: 800px;
+ }
+
+ .por {
+ 	display: flex;
+ 	width: 500px;
+ 	height: 60px;
+ 	background: linear-gradient(20deg, #162C9a, #B35818);
+ 	margin: 10px;
+ 	justify-content: center;
+ 	gap: 40px;
+ 	border-top-left-radius: 10px;
+ 	border-top-right-radius: 10px;
+ 	box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+ }
+
+ .por1 {
+ 	display: flex;
+ 	flex-direction: column;
+ 	padding-top: 7px;
+ 	margin-top: 10px;
+ 	font-family: candara;
+ 	font-size: 20px;
+ 	border-radius: 25px;
+ 	height: 40px;
+ 	width: 40px;
+ 	color: white;
+ }
+
+ .barras {
+ 	display: flex;
+ 	flex-direction: row;
+ 	background: linear-gradient(20deg, #162C9a, #B35818);
+ 	height: 250px;
+ 	width: 500px;
+ 	justify-content: center;
+ 	gap: 20px;
+ 	border-bottom-left-radius: 10px;
+ 	border-bottom-right-radius: 10px;
+ 	box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+ }
+  .barra1 {
+  	font-family: candara;
+  	font-size:;
+  	display: flex;
+  	flex-direction: column-reverse;
+  	margin: 10px;
+  	margin-top: 20px;
+  	align-items: center;
+  	border-radius: 4px;
+  	font-size: 14px;
+  }
+  .porcen1, .porcen2, .porcen3, .porcen4, .porcen5, .porcen6 {
+    width: 9px;
+    /*height: 100px;*/
+    margin-bottom: 9px;
+    margin-left: 1px;
+    border-radius: 5px;
+    background: linear-gradient(100deg, #FD9A28, #FF5126);
+}
+
+.porcen1 {height: 150px;}
+.porcen2 {height: 130px;}
+.porcen3 {height: 55px;}
+.porcen4 {height: 100px;}
+.porcen5 {height: 35px;}
+.porcen6 {height: 80px;}
