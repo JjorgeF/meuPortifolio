@@ -7,19 +7,70 @@
 
 	}
 
+	html {
+
+	}
+
 	body {
 		font-size: 100%;
 		background: linear-gradient(45deg, #03383c, #3fa0a7);
-		/*background-color: #3FA796;*/
 		color: white;
+		transition: background 0.2s linear;
 	}
 
-	main {
-		margin: ;
-		padding: ;
-		width: ;
-		height: ;
+	body.dark {
+		background: #292c35;
 	}
+/*DARKMODE IHUU, APLICANDO .JS COM .CSS*/
+
+	.darkmode-position {
+		margin-top: 3px;
+	}
+
+	.checkbox {
+		opacity: 0;
+		position: absolute;
+	}
+
+	.label {
+		background-color: black;
+		border-radius: 50px;
+		cursor: pointer;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		padding: 4px;
+		position: relative;
+		height: 24px;
+		width: 48px;
+
+		transform: scale(1.3);
+	}
+
+	.label .ball {
+		background: linear-gradient(120deg, #03383c, #3fa0a7);
+		border-radius: 50%;
+		position: absolute;
+		top: 1.5px;
+		left: 2px;
+
+		height: 21px;
+		width: 21px;
+
+		transform: translateX(0px);
+		transition: transfrom 0.2s linear;
+	}
+
+	.checkbox:checked + .label .ball {
+		transform: translateX(23px);
+	}
+
+	.fa-sun {color: #FBDF07;}
+	.fa-moon {color: #F5EDDC;}
+
+/*FIM DA CONSTRUÇÃO DO ALTERNADOR DE MODO (DARK/LIGHT)*/
 
 	.apresentacao {
 		border-top: 5px solid #313568;
@@ -33,7 +84,8 @@
 	}
 
 	.apresentacao-texto {
-		max-width: 600px;
+		text-indent: 50px;
+		max-width: 700px;
 		font-family: candara;
 		font-size: 18px;
 	}
@@ -212,10 +264,11 @@
 	 	margin-top: 10px;
 	 	font-family: candara;
 	 	font-size: 20px;
-	 	border-radius: 25px;
+	 	border-radius: 10px;
 	 	height: 40px;
 	 	width: 40px;
 	 	color: white;
+	 	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
  	}
 
 	.barras {
@@ -250,12 +303,12 @@
 	    background: linear-gradient(100deg, #FD9A28, #FF5126);
 	}
 
-	.porcen1 {height: 150px;}
-	.porcen2 {height: 130px;}
-	.porcen3 {height: 55px;}
-	.porcen4 {height: 100px;}
-	.porcen5 {height: 35px;}
-	.porcen6 {height: 80px;}
+	.porcen1 {height: 150px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+	.porcen2 {height: 130px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+	.porcen3 {height: 55px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+	.porcen4 {height: 100px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+	.porcen5 {height: 35px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+	.porcen6 {height: 80px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
 
 /*footer*/
 	.titulo-contato {
