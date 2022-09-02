@@ -88,19 +88,27 @@
 		max-width: 700px;
 		font-family: candara;
 		font-size: 18px;
+		margin: 15px;
+	}
+
+	.eu {
+		background: linear-gradient(200deg, #0a544a, #3fa0a7);
+		height: 265px;
+		width: 700px;
+		text-align: center;
+		border-radius: 10px;
 	}
 
 	.minha-foto {
-		border-radius: 40px;
-
+		border-radius: 15px;
 	}
 
 	.cabecalho-links {
 		display: flex;
-		justify-content: right;
+		justify-content: flex-end;
 		gap: 10px;
 		padding-bottom: 20px;
-		padding-right: 25px;
+		padding-right: 100px;
 		padding-top: 20px;
 	}
 
@@ -144,6 +152,7 @@
 		color: white;
 		font-size: 30px;
 		font-weight: bold;
+		padding-left: 45px;
 	}
 
 	.titulo-projetos {
@@ -165,20 +174,25 @@
 		flex-wrap: wrap-reverse;
 	}
 
-	div.projeto-key, div.projeto-sk8, div.projeto-estrelas {
+	.projeto-key, .projeto-cda, .projeto-sk8 {
 		color: white;
 		border: none;
-		width: 300px;
+		width: 340px;
+		height: 220px;
 		border-radius: 8px;
 		background: linear-gradient(200deg, #0a544a, #3fa0a7);
+		padding-top: 20px;
 	}
 
 	.titulo-kpp {
 		text-transform: uppercase;
-		padding-top: 10px;
-		padding-bottom: 20px;
 		font-family: candara, serif;
+		text-decoration: none;
+		font-size: 26px;
+		color: white;
+		font-weight: bold;
 	}
+	.texto-projeto {margin-top: 20px;}
 
 	.titulo-git {
 		font-family: candara, serif;
@@ -193,7 +207,7 @@
 		text-align: center;
 		font-size: 33px;
 		font-weight: bold;
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 
 	.texto-projeto {
@@ -311,6 +325,7 @@
 	.porcen6 {height: 80px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
 
 /*footer*/
+
 	.titulo-contato {
 		font-family: candara;
 		text-align: center;
@@ -325,20 +340,42 @@
 		margin-top: 20px;
 		display: flex;
 		justify-content: space-around;
-	}
 
-	.footer {
 		border-top: 5px solid #313568;
-		background: linear-gradient(70deg, #03383c, #3fa0a7);
+		//background: linear-gradient(70deg, #03383c, #3fa0a7);
+		background-color: ;
 	}
 
 	.fim {
+		color: white;
 		list-style: none;
 		text-align: center;
 		padding-bottom: 30px;
+
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 		gap: 90px;
+
 		margin-top: 35px;
+		font-size: 25px;
+
+		transition-property: background-color, border-radius;
+	}
+
+	.linkedin:hover {
+		background-color: #157bad;
+		border-radius: 6px;
+		transition-duration: 1.5s;
+	}
+
+	.git:hover {
+		background-color: red;
+		border-radius: 6px;
+		transition-duration: 1.5s;
+	}
+
+	.projeto-sk8:hover {
+		transition-property: all;
+		background-color: red;
 	}
