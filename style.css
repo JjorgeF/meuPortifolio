@@ -13,7 +13,8 @@
 
 	body {
 		font-size: 100%;
-		background: linear-gradient(45deg, #03383c, #3fa0a7);
+		/*background: linear-gradient(45deg, #03383c, #3fa0a7);*/
+		background-color: #4E586E;
 		color: white;
 		transition: background 0.2s linear;
 	}
@@ -21,7 +22,7 @@
 	body.dark {
 		background: #292c35;
 	}
-/*DARKMODE IHUU, APLICANDO .JS COM .CSS*/
+/*-----------------------DARKMODE IHUU, APLICANDO .JS COM .CSS*/
 
 	.darkmode-position {
 		margin-top: 3px;
@@ -70,33 +71,43 @@
 	.fa-sun {color: #FBDF07;}
 	.fa-moon {color: #F5EDDC;}
 
-/*FIM DA CONSTRUÇÃO DO ALTERNADOR DE MODO (DARK/LIGHT)*/
+/*-----------------------------FIM DA CONSTRUÇÃO DO ALTERNADOR DE MODO (DARK/LIGHT)*/
+
+	.aboutme {
+	background: linear-gradient(200deg, #0a544a, #3fa0a7);
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 700px;
+	text-align: center;
+	border-radius: 10px;
+}
+	.contato {
+		font-family: candara;
+		font-size: 18px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 10px;
+	}
 
 	.apresentacao {
-		border-top: 5px solid #313568;
+		border-top: 5px solid #3fa0a7;
 		margin-bottom: 80px;
 		padding-top: 55px;
 		display: flex;
-		flex-direction: row;
+		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: center;
 		gap: 150px;
 	}
 
-	.apresentacao-texto {
+	.apresen-texto {
 		text-indent: 50px;
 		max-width: 700px;
 		font-family: candara;
 		font-size: 18px;
 		margin: 15px;
-	}
-
-	.eu {
-		background: linear-gradient(200deg, #0a544a, #3fa0a7);
-		height: 265px;
-		width: 700px;
-		text-align: center;
-		border-radius: 10px;
 	}
 
 	.minha-foto {
@@ -134,7 +145,7 @@
 	}
 
 	.cabecalho-item:hover {
-		background-color: #2A0944;
+		background-color: #3fa0a7;
 		width: ;
 
 	}
@@ -342,7 +353,7 @@
 		justify-content: space-around;
 
 		border-top: 5px solid #313568;
-		//background: linear-gradient(70deg, #03383c, #3fa0a7);
+		/*background: linear-gradient(70deg, #03383c, #3fa0a7);*/
 		background-color: ;
 	}
 
