@@ -46,6 +46,7 @@
 	.contatoLinkedin:hover {
 		background-color: #087bb4;
 		transition-duration: 0.5s;
+		/*TIRAR O LINK DOS CONTATOS*/
 	}
 
 	.contatoGit:hover {
