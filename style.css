@@ -22,13 +22,11 @@
 	.aboutme {
 	display: flex;
 	flex-direction: column;
-	height: 300px;
 	width: 600px;
-	text-align: center;
-	border-radius: 10px;
 }
 
 	.contato {
+		text-align: center;
 		font-family: candara;
 		font-size: 18px;
 		display: flex;
@@ -37,56 +35,57 @@
 		gap: 10px;
 	}
 
-	.git, .linkedin, .email {
-		border: white;
-		border-radius: 5px;
-		height: 30px;
-		width: 90px;
-		line-height: 30px;
+	.contatoGit, .contatoLinkedin, .contatoEmail {
+		background-color: #333841;
+		height: 35px;
+		width: 100px;
+		border-radius: 35px;
+		line-height: 35px;
 	}
 
-	.linkedin:hover {
+	.contatoLinkedin:hover {
 		background-color: #087bb4;
 		transition-duration: 0.5s;
 	}
 
-	.git:hover {
+	.contatoGit:hover {
 		background-color: rgb(0, 0, 0);
 		transition-duration: 0.5s;
 	}
 
-	.email:hover {
+	.contatoEmail:hover {
 		transition-duration: 0.5s;
-		background-color: rgb(241, 237, 1);
+		background-color: rgb(241, 1, 1);
 	}
 
 	.apresentacao {
 		background: linear-gradient(200deg, #0a544a, #3fa0a7);
 		margin-bottom: 80px;
-		padding-top: 55px;
+		padding-top: 60px;
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: center;
-		gap: 150px;
-		padding-bottom: 0px;
-	}
-	.fundo-foto {
-		background-color: red;
-		padding-top: 50px;
+		gap: 100px;
 	}
 
+	.fundo-foto {
+		padding-bottom: ;
+	}
+	
 	.minha-foto {
-		width: 200px;
-		height: 250px;
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+		width: 240px;
+		height: 290px;
 		filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.497));
 	}
 
-	.apresen-texto {
+	.apresentacaoTexto {
 		text-indent: 50px;
 		max-width: 700px;
 		font-family: candara;
-		font-size: 18px;
+		font-size: 22px;
 		margin: 15px;
 	}
 
@@ -106,7 +105,7 @@
 		border-radius: 10px;
 	}
 
-	/*----------------------------animando os itens*/
+	/*----------------------------animando os itens----------------------*/
 	.cabecalho-item {
 		display: flex;
 		align-items: center;
@@ -121,7 +120,7 @@
 	}
 
 	.cabecalho-item:hover {
-		background-color: #3fa0a7;
+		background-color: #296e73;
 		width: ;
 
 	}
