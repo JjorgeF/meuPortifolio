@@ -14,74 +14,20 @@
 	body {
 		font-size: 100%;
 		/*background: linear-gradient(45deg, #03383c, #3fa0a7);*/
-		background-color: #4E586E;
+		background-color: #333841;
 		color: white;
 		transition: background 0.2s linear;
 	}
 
-	body.dark {
-		background: #292c35;
-	}
-/*-----------------------DARKMODE IHUU, APLICANDO .JS COM .CSS*/
-
-	.darkmode-position {
-		margin-top: 3px;
-	}
-
-	.checkbox {
-		opacity: 0;
-		position: absolute;
-	}
-
-	.label {
-		background-color: black;
-		border-radius: 50px;
-		cursor: pointer;
-
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		padding: 4px;
-		position: relative;
-		height: 24px;
-		width: 48px;
-
-		transform: scale(1.3);
-	}
-
-	.label .ball {
-		background: linear-gradient(120deg, #03383c, #3fa0a7);
-		border-radius: 50%;
-		position: absolute;
-		top: 1.5px;
-		left: 2px;
-
-		height: 21px;
-		width: 21px;
-
-		transform: translateX(0px);
-		transition: transfrom 0.2s linear;
-	}
-
-	.checkbox:checked + .label .ball {
-		transform: translateX(23px);
-	}
-
-	.fa-sun {color: #FBDF07;}
-	.fa-moon {color: #F5EDDC;}
-
-/*-----------------------------FIM DA CONSTRUÇÃO DO ALTERNADOR DE MODO (DARK/LIGHT)*/
-
 	.aboutme {
-	background: linear-gradient(200deg, #0a544a, #3fa0a7);
 	display: flex;
 	flex-direction: column;
-	height: 150px;
-	width: 700px;
+	height: 300px;
+	width: 600px;
 	text-align: center;
 	border-radius: 10px;
 }
+
 	.contato {
 		font-family: candara;
 		font-size: 18px;
@@ -111,15 +57,11 @@
 
 	.email:hover {
 		transition-duration: 0.5s;
-		background-color: rgb(205, 241, 1);
-	}
-
-	. {
-		background-color: #4E586E;
+		background-color: rgb(241, 237, 1);
 	}
 
 	.apresentacao {
-		border-top: 5px solid #3fa0a7;
+		background: linear-gradient(200deg, #0a544a, #3fa0a7);
 		margin-bottom: 80px;
 		padding-top: 55px;
 		display: flex;
@@ -127,6 +69,17 @@
 		align-items: center;
 		justify-content: center;
 		gap: 150px;
+		padding-bottom: 0px;
+	}
+	.fundo-foto {
+		background-color: red;
+		padding-top: 50px;
+	}
+
+	.minha-foto {
+		width: 200px;
+		height: 250px;
+		filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.497));
 	}
 
 	.apresen-texto {
@@ -135,10 +88,6 @@
 		font-family: candara;
 		font-size: 18px;
 		margin: 15px;
-	}
-
-	.minha-foto {
-		border-radius: 15px;
 	}
 
 	.cabecalho-links {
@@ -254,12 +203,6 @@
 		padding-right: 10px;
 	}
 
-	.minha-foto {
-		width: 200px;
-		height: 250px;
-		filter: drop-shadow(1px 1px 10px black);
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	}
 	/* TRANSIÇÃO COM BLUR NA FRENTE QUE APÓS SOBREPOSSIÇÃO DO MOUSE O BLUR SOME :].blurtransition {
 		filter: blur(10px);
 		transition: filter 0.2s;
