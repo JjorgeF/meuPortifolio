@@ -35,12 +35,24 @@
 		gap: 10px;
 	}
 
-	.contatoGit, .contatoLinkedin, .contatoEmail {
+	.contato p {
 		background-color: #333841;
 		height: 35px;
 		width: 100px;
 		border-radius: 35px;
 		line-height: 35px;
+	}
+	/*-------------------------Tirando links------------------------*/
+	 
+	 .git:visited, .git:hover, .git:link, .git:active {
+		 color: white;
+	 }
+
+	 .email:visited, .email:hover, .email:link, .email:active {
+		color: white;
+	}
+	.linkedin:visited, .linkedin:hover, .linkedin:link, .linkedin:active {
+		color: white;
 	}
 
 	.contatoLinkedin:hover {
@@ -157,11 +169,10 @@
 		flex-direction: row;
 		gap: 40px;
 		justify-content: center;
-		/*align-items: baseline;*/
 		flex-wrap: wrap-reverse;
 	}
 
-	.projeto-key, .projeto-cda, .projeto-mc {
+	.projeto-key, .projeto-cda, .projeto-mcl {
 		color: white;
 		border: none;
 		width: 340px;
