@@ -224,98 +224,12 @@
 
 	/*CRIAÇÃO DO GRÁFICOOO :)*/
 
-
-/*TEEEESTEE*/
-	.tudo {
-	 	display: flex;
-	 	background: linear-gradient(70deg, #03383c, #3fa0a7);
-	 	width: 800px;
-	 	height: 400px;
-	 	align-items: center;
-	 	padding-left: ;
-	 	margin-left: 250px;
-	 	padding-top: 20px;
-	 	margin-top: 25px;
-	 	border-radius: 14px;
-	 	margin-bottom: 100px;
-	 }
-
-	.graf {
-	 	display: flex;
-	 	flex-direction: column;
-	 	align-items: center;
-	 	text-align: center;
-	 	height: 400px;
-	 	padding-top: 15px;
-	 	width: 800px;
-	 }
-
-	.por {
-	 	display: flex;
-	 	width: 500px;
-	 	height: 60px;
-	 	background: linear-gradient(20deg, #162C9a, #B35818);
-	 	margin: 10px;
-	 	justify-content: center;
-	 	gap: 40px;
-	 	border-top-left-radius: 10px;
-	 	border-top-right-radius: 10px;
-	 	box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
- 	}
-
-	.por1 {
-	 	display: flex;
-	 	flex-direction: column;
-	 	padding-top: 7px;
-	 	margin-top: 10px;
-	 	font-family: candara;
-	 	font-size: 20px;
-	 	border-radius: 10px;
-	 	height: 40px;
-	 	width: 40px;
-	 	color: white;
-	 	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
- 	}
-
-	.barras {
-	 	display: flex;
-	 	flex-direction: row;
-	 	background: linear-gradient(20deg, #162C9a, #B35818);
-	 	height: 250px;
-	 	width: 500px;
-	 	justify-content: center;
-	 	gap: 20px;
-	 	border-bottom-left-radius: 10px;
-	 	border-bottom-right-radius: 10px;
-	 	box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
- 	}
-	.barra1 {
-	  	font-family: candara;
-	  	font-size:;
-	  	display: flex;
-	  	flex-direction: column-reverse;
-	  	margin: 10px;
-	  	margin-top: 20px;
-	  	align-items: center;
-	  	border-radius: 4px;
-	  	font-size: 14px;
-  	}
-  	.porcen1, .porcen2, .porcen3, .porcen4, .porcen5, .porcen6 {
-	    width: 9px;
-	    /*height: 100px;*/
-	    margin-bottom: 9px;
-	    margin-left: 1px;
-	    border-radius: 5px;
-	    background: linear-gradient(100deg, #FD9A28, #FF5126);
+	#graf {
+		margin: auto;
+		background: linear-gradient(200deg, #0a544a, #3fa0a7);
+		margin-top: 10%;
+		border-radius: 8px;
 	}
-
-	.porcen1 {height: 150px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-	.porcen2 {height: 130px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-	.porcen3 {height: 55px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-	.porcen4 {height: 100px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-	.porcen5 {height: 35px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-	.porcen6 {height: 80px; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
-
 /*footer*/
 
 	.titulo-contato {
