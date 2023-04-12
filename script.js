@@ -1,5 +1,4 @@
-window.alert("!!Atenção!! Este site ainda está em construção. Caso encontre erros, avise-me, por favor! :)");
-
+/*
 //Gráficos sobre minhas habilidades
 
 // Get the HTML canvas by its id 
@@ -33,3 +32,5 @@ new Chart(graf, {
     
     }
 });
+*/
+window.alert("!!Atenção!! Este site ainda está em construção. Caso encontre erros, avise-me, por favor!");
