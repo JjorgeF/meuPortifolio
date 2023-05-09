@@ -33,4 +33,4 @@ new Chart(graf, {
     }
 });
 */
-window.alert("!!Atenção!! Este site ainda está em construção. Caso encontre erros, avise-me, por favor!");
+/*window.alert("!!Atenção!! Este site ainda está em construção. Caso encontre erros, avise-me, por favor!");*/

@@ -4,15 +4,37 @@
 		padding: 0;
 		box-sizing: border-box;
 		text-decoration: none;
-
 	}
 
 	html {
 
 	}
 
+	.cabecalho {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 5px;
+	}
+	nav {
+		display: flex;
+	}
+	.cabecalho-links {
+		display: flex;
+		gap: 20px;
+		list-style: none;
+	}
+
+	.cabecalho-item {
+		letter-spacing: 1px;
+		font-size: 18px;
+		font-family: candara;
+		font-weight: bold;
+	}
+
 	body {
 		font-size: 100%;
+		font-family: candara;
 		/*background: linear-gradient(45deg, #03383c, #3fa0a7);*/
 		background-color: #333841;
 		color: white;
@@ -20,32 +42,41 @@
 	}
 
 	.aboutme {
-	display: flex;
-	flex-direction: column;
-	width: 600px;
-}
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+	}
 
 	.contato {
 		text-align: center;
-		font-family: candara;
 		font-size: 18px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		gap: 10px;
 	}
+	
 
 	.contato p {
 		background-color: #333841;
 		height: 35px;
 		width: 100px;
-		border-radius: 35px;
 		line-height: 35px;
+	}
+
+	.contatoGit {
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+	}
+
+	.contatoEmail {
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
 	}
 	/*-------------------------Tirando links------------------------*/
 	 
 	 .git:visited, .git:hover, .git:link, .git:active {
-		 color: white;
+		color: white;
 	 }
 
 	 .email:visited, .email:hover, .email:link, .email:active {
@@ -56,19 +87,19 @@
 	}
 
 	.contatoLinkedin:hover {
-		background-color: #087bb4;
+		background-color: #0d8ac9;
 		transition-duration: 0.5s;
 		/*TIRAR O LINK DOS CONTATOS*/
 	}
 
 	.contatoGit:hover {
-		background-color: rgb(0, 0, 0);
+		background-color: rgb(16, 15, 15);
 		transition-duration: 0.5s;
 	}
 
 	.contatoEmail:hover {
 		transition-duration: 0.5s;
-		background-color: rgb(241, 1, 1);
+		background-color: rgb(205, 27, 27);
 	}
 
 	.apresentacao {
@@ -87,8 +118,8 @@
 	}
 	
 	.minha-foto {
-		border-bottom-left-radius: 50px;
-		border-bottom-right-radius: 50px;
+		border-radius: 40px 20px 40px 20px;
+		
 		width: 240px;
 		height: 290px;
 		filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.497));
@@ -97,25 +128,8 @@
 	.apresentacaoTexto {
 		text-indent: 50px;
 		max-width: 700px;
-		font-family: candara;
 		font-size: 22px;
 		margin: 15px;
-	}
-
-	.cabecalho-links {
-		display: flex;
-		justify-content: flex-end;
-		gap: 10px;
-		padding-bottom: 20px;
-		padding-right: 100px;
-		padding-top: 20px;
-	}
-
-	.cabecalho-item {
-		font-family: candara, sans-serif;
-		font-size: 18px;
-		font-weight: bold;
-		border-radius: 10px;
 	}
 
 	/*----------------------------animando os itens----------------------*/
@@ -123,19 +137,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width:;
 		height: 30px;
 		color: white;
 	}
 	.cabecalho-item {
 		transition: background-color 0.7s;
-		width: 100px;
+		width: 7vw;
+		border-radius: 7px;
 	}
 
 	.cabecalho-item:hover {
 		background-color: #296e73;
-		width: ;
-
 	}
 
 	.cabecalho-nome {
@@ -145,24 +157,20 @@
 		align-items: left;
 	}
 
-	.nome {
+	.logo {
 		text-transform: uppercase;
-		font-family: candara;
-		color: white;
+		color: #fff;
 		font-size: 30px;
 		font-weight: bold;
-		padding-left: 45px;
 	}
 
 	.titulo-projetos {
 		text-align: center;
 		width: 0px block;
-		font-family: candara;
 		font-size: 25px;
 	}
 
 	.meus-projetos {
-		font-family: candara, serif;
 		text-align: center;
 		padding-top: 35px;
 		display: flex;
@@ -184,7 +192,6 @@
 
 	.titulo-kpp {
 		text-transform: uppercase;
-		font-family: candara, serif;
 		text-decoration: none;
 		font-size: 26px;
 		color: white;
@@ -193,7 +200,6 @@
 	.texto-projeto {margin-top: 20px;}
 
 	.titulo-git {
-		font-family: candara, serif;
 		text-align: center;
 		font-size: 33px;
 		font-weight: bold;
@@ -201,7 +207,6 @@
 	}
 
 	.titulo-hab {
-		font-family: candara, serif;
 		text-align: center;
 		font-size: 33px;
 		font-weight: bold;
@@ -221,19 +226,9 @@
 	.blurtransition:hover {
 		filter: blur(0px);
 	}*/
-
-	/*CRIAÇÃO DO GRÁFICOOO :)*/
-
-	#graf {
-		margin: auto;
-		background: linear-gradient(200deg, #0a544a, #3fa0a7);
-		margin-top: 10%;
-		border-radius: 8px;
-	}
 /*footer*/
 
 	.titulo-contato {
-		font-family: candara;
 		text-align: center;
 		font-size: 33px;
 		font-weight: bold;
@@ -241,7 +236,6 @@
 	}
 
 	.footer {
-		font-family: candara;
 		font-size: 20px;
 		margin-top: 20px;
 		display: flex;
@@ -267,4 +261,11 @@
 		font-size: 25px;
 
 		transition-property: background-color, border-radius;
+	}
+
+/*----------@MEDIA QUERY----------*/
+	@media (width: 888px) {
+		.cabecalho-item {
+			display: none;
+		}
 	}
