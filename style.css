@@ -6,8 +6,13 @@
 		text-decoration: none;
 	}
 
-	html {
-
+	body {
+		font-size: 100%;
+		font-family: candara;
+		/*background: linear-gradient(45deg, #03383c, #3fa0a7);*/
+		background-color: #333841;
+		color: white;
+		transition: background 0.2s linear;
 	}
 
 	.cabecalho {
@@ -16,9 +21,18 @@
 		align-items: center;
 		margin: 5px;
 	}
-	nav {
-		display: flex;
+
+	header .cabecalho{
+		position: fixed;
+		background: transparent;
+		backdrop-filter: blur(10px);
 	}
+
+	nav .navMenu {
+		display: flex;
+		text-align: end;
+	}
+
 	.cabecalho-links {
 		display: flex;
 		gap: 20px;
@@ -30,15 +44,6 @@
 		font-size: 18px;
 		font-family: candara;
 		font-weight: bold;
-	}
-
-	body {
-		font-size: 100%;
-		font-family: candara;
-		/*background: linear-gradient(45deg, #03383c, #3fa0a7);*/
-		background-color: #333841;
-		color: white;
-		transition: background 0.2s linear;
 	}
 
 	.aboutme {
@@ -264,8 +269,8 @@
 	}
 
 /*----------@MEDIA QUERY----------*/
-	@media (width: 888px) {
+	/* @media (width: 888px) {
 		.cabecalho-item {
 			display: none;
 		}
-	}
+	} */
