@@ -4,189 +4,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Nova+Mono&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    /*font-family: 'Be Vietnam Pro', sans-serif;*/
-    font-family: "Rokkitt", serif;
-    background-color: #505257;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    list-style: none;
-    color: #ffffff;
-}
-
-/*-------------------------INÍCIO DO CABEÇALHO-------------------------*/
-header {
-    background: linear-gradient(200deg, #0a544a, #3fa0a7);
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.1rem;
-}
-
-.navMenu {
     display: flex;
-    justify-content: space-between;
-    padding: 0.3rem 3rem;
-}
-
-.logoImg {
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87ceeb, #e0f6ff 70%, #d3d3d3 100%); /* Céu com uma base de chão suave */
 }
 
-.ulMenu {
-    display: flex;
-    list-style: none;
+h1 {
+    color: #000000;
+    margin-bottom: -40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-family: 'Be Vietnam Pro';
 }
 
-.navItem {
-    margin: 0px 20px;
-}
-
-ul li {
-    transition: transform 0.3s;
-    /* Animation */
-}
-
-ul li:hover {
-    transform: scale(1.2);
-}
-
-@media screen and (max-width: 730px) {
-    .ulMenu {
-        font-size: 10px;
-    }
-}
-
-/*--------------------------FIM DO CABEÇALHO--------------------------*/
-/*---------------------------INÍCIO DA MAIN---------------------------*/
-.aboutMe {
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-evenly;
-}
-
-.textAboutMe {
-    text-align: center;
-}
-
-.textAboutMe p {
-    width: 30vw;
-}
-
-.imgEu img {
-    width: 200px;
-    height: 250px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-}
-
-.contato {
-    text-align: center;
-}
-
-.git,
-.email,
-.linkedin {
-    margin: 20px;
-
-}
-
-/*---------------------PAREI AQUI----------------------*/
-.contato img:hover {
-    /* transform: rotate(360deg); */
-    transform: scale(1.3);
-}
-
-.contato img {
-    width: 25px;
-    height: 25px;
-    transition: transform 0.4s;
-}
-
-article h1 {
-    background: linear-gradient(200deg, #0a544a, #3fa0a7);
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-    letter-spacing: 0.7rem;
-}
-
-.sectionProjetos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.projetos {
-    width: 380px;
-    height: 260px;
-    padding: 20px;
-    background-color: transparent;
-    perspective: 1000px;
-}
-
-.frontCard,
-.backCard {
-    border-radius: 10px;
-}
-
-.textKey, .textCtrl, .textAppF {
-    padding: 10px;
-}
-
-.frontH {
-    padding-top: 50px;
-    justify-content: center;
-}
-
-.innerProjetos {
+.container {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.9s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 500px; /* Largura ajustada para mais espaço */
+    height: 350px;
+    background-color: #9b9b9b; /* Chão mais neutro */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    margin-top: 50px;
 }
 
-.projetos:hover .innerProjetos {
-    transform: rotateY(180deg);
-}
-
-.frontCard,
-.backCard {
+/* Céu, Sol e Nuvens - Melhorados */
+.sol {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    top: 50px;
+    right: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: #ffd000; /* Dourado */
+    border-radius: 60%;
+    box-shadow: 0 0 25px rgba(255, 166, 0, 0.7);
+    animation: pulsarSol 10s infinite alternate; /* Animação suave para o sol */
 }
 
-.frontCard {
-    background: linear-gradient(200deg, #0a544a, #3fa0a7);
-    color: white;
+@keyframes pulsarSol {
+    from { transform: scale(2.0); }
+    to { transform: scale(2.06); }
 }
 
-.backCard {
-    background: linear-gradient(200deg, #0a544a, #3fa0a7);
-    color: white;
-    transform: rotateY(180deg);
+.nuvem {
+    position: absolute;
+    background-color: #e9e9e9;
+    border-radius: 80%;
+    opacity: 0.9;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    animation: moverNuvem 20s linear infinite; /* Nuvens se movem */
 }
 
+#nuvem1 { top: 50px; left: -100px; width: 100px; height: 60px; animation-delay: 0s; }
+#nuvem2 { top: 80px; left: -250px; width: 150px; height: 75px; animation-delay: -5s; } /* Para variar o início */
+#nuvem3 { top: 30px; left: -400px; width: 100px; height: 50px; animation-delay: -10s; }
+#nuvem4 { top: 90px; left: -100px; width: 200px; height: 90px; animation-delay: -10s; }
 
-/*----------------------------FIM DA MAIN----------------------------*/
-/*--------------------------INÍCIO DO FOOTER--------------------------*/
-footer {
-    background: linear-gradient(200deg, #0a544a, #3fa0a7);
+@keyframes moverNuvem {
+    from { transform: translateX(0); }
+    to { transform: translateX(600px); } /* Ajuste conforme a largura da sua tela/container */
+}
+
+/* Personagens */
+.personagem, .personagem-observador {
+    width: 60px; /* Mais largo */
+    height: 90px; /* Mais alto */
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    display: flex; /* Para centralizar o "rosto" */
+    justify-content: center;
+    align-items: flex-start; /* Para o "rosto" ficar em cima */
+    padding-top: 10px;
+}
+
+.personagem {
+    background-color: #3498db;
+    left: 50px;
+    animation: moverPersonagem 10s infinite;
+    border-radius: 100px;
+}
+
+.personagem-observador {
+    background-color: #ff0000;
+    right: 50px;
+    border-radius: 100px;
+}
+
+/* "Rosto" simples para os personagens */
+.rosto {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    border: 2px solid #333;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Blocos Retangulares - Melhorados */
+.bloco {
+    width: 80px; /* Mais largo */
+    height: 45px; /* Mais baixo */
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.1);
     text-align: center;
-    font-family: "rokkitt", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
 }
 
-/*----------------------------FIM Do FOOTER----------------------------*/
+#bloco1 {
+    left: 100px;
+    animation: empilharBloco1 10s infinite;
+    background-color: #f1c40f; /* Cor diferente */
+}
+
+#bloco2 {
+    left: 180px; /* Posição ajustada */
+    animation: empilharBloco2 10s infinite;
+    background-color: #9b59b6; /* Cor diferente */
+}
+
+#bloco3 {
+    left: 260px; /* Posição ajustada */
+    animation: empilharBloco3 10s infinite;
+    background-color: #1abc9c; /* Cor diferente */
+}
+
+/* Animações - Ajustadas para novos tamanhos */
+@keyframes moverPersonagem {
+    0%, 100% { left: 50px; }
+    10% { left: 100px; }
+    30% { left: 100px; }
+    40% { left: 180px; } /* Ajustado para largura do bloco */
+    60% { left: 180px; }
+    70% { left: 260px; } /* Ajustado para largura do bloco */
+    90% { left: 260px; }
+}
+
+@keyframes empilharBloco1 {
+    0%, 20% { bottom: 0; left: 100px; }
+    30%, 100% { bottom: 45px; left: 0px; } /* Altura do bloco */
+}
+
+@keyframes empilharBloco2 {
+    0%, 50% { bottom: 0; left: 180px; }
+    60%, 100% { bottom: 90px; left: 0px; } /* Altura do bloco * 2 */
+}
+
+@keyframes empilharBloco3 {
+    0%, 80% { bottom: 0; left: 260px; }
+    90%, 100% { bottom: 135px; left: 0px; } /* Altura do bloco * 3 */
+}
