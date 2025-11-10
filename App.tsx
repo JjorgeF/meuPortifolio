@@ -21,13 +21,13 @@ const App: React.FC = () => {
       <div className="mt-12">
         <p className="text-amber-400 font-semibold mb-4">Enquanto isso, me encontre aqui:</p>
         <div className="flex items-center justify-center space-x-6">
-          <SocialLink href="https://github.com" aria-label="Github Profile">
+          <SocialLink href="https://github.com/JjorgeF" aria-label="Github Profile">
             <GithubIcon />
           </SocialLink>
-          <SocialLink href="https://linkedin.com" aria-label="LinkedIn Profile">
+          <SocialLink href="https://www.linkedin.com/in/jorge-felipe-silva-71477a192" aria-label="LinkedIn Profile">
             <LinkedinIcon />
           </SocialLink>
-          <SocialLink href="mailto:contato@exemplo.com" aria-label="Send an Email">
+          <SocialLink href="mailto:jorgefelipe0299@gmail.com" aria-label="Send an Email">
             <MailIcon />
           </SocialLink>
         </div>
