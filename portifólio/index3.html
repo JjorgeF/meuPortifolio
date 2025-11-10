@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jorge Felipe</title>
+
+	<!-- link de referência para o css :) -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script  type="text/javascript" src="script.js"></script>
+	<!-- link de referência para o graf | chart.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+</head>
+<body>
+	<header class="cabecalho">
+		<a class="logo" href="./index.html">Jorge Felipe</a>
+			<nav class="navMenu">
+				<ul class="cabecalho-links">
+					<li><a class="cabecalho-item" href="">Início</a></li>
+					<li><a class="cabecalho-item" href="">Projetos</a></li>
+					<li><a class="cabecalho-item" href="">Habilidades</a></li>
+					<li><a class="cabecalho-item" href="">Contato</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<main class="conteudo">
+		<section class="apresentacao">
+			<div class="fundo-foto">
+			<img class="minha-foto" src="./assets/imgs/meu.jpeg" alt="Foto do Jorge"></img>
+			</div>
+			<div class="aboutme">
+				<div class="apresentacaoTexto">
+					<p>Olá Mundo, me chamo <strong>Jorge Felipe</strong> e esse aqui é meu portifólio.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, nostrum!<br><br></p>
+					</div>
+						<div class="contato">
+							<p class="contatoGit"><a href="https://github.com/JjorgeF" target="_blank" class="git">Github</a></p>
+							<p class="contatoLinkedin"><a href="https://www.linkedin.com/in/jorge-felipe-silva-71477a192/" target="_blank" class="linkedin">LinkedIn</a></p>
+							<p class="contatoEmail"><a href="mailto:jorgefelipe0299@gmail.com" class="email">E-mail</a></p>
+						</div>
+			</div>
+		</section>
+			<div class="titulo-projetos">
+				<h1>Meus Projetos</h1>
+			</div>
+		<section class="meus-projetos">
+			<div class="projeto-key">
+				<a href="https://github.com/JjorgeF/-Keylogger-Teste-do-Script" target="_blank" class="titulo-kpp">Keylogger</a>
+					<p class="texto-projeto">Durante meu ensino médio e meu curso de <strong>Redes de Computadores</strong>, realizei a criação de um <strong>Keylogger</strong> junto com meu grupo, onde o a ideia era demonstrar os perigos do uso sem precauções da internet e que em qualquer ambiente digital estámos correndo perigo.</p>
+			</div>
+
+			<div class="projeto-cda">
+				<a href="https://github.com/JjorgeF/-Registrador-de-Acessos" target="_blank" class="titulo-kpp">Controlador de Acesso</a>
+					<p class="texto-projeto">Eu e meu grupo realizamos a construção de um controlador de acessos para a entrada do nosso instituto (IFSP-PTB), onde criamos um banco de dados, um confirmador de acesso e o output com as informações básicas a respeito do aluno ou funcionário do IFSP-PTB.</p>
+			</div>
+
+			<div class="projeto-mcl">
+				
+				<a href="https://github.com/JjorgeF/-Registrador-de-Acessos" target="_blank" class="titulo-kpp">Machine Learning</a>
+					<p class="texto-projeto">Projeto que visa a criação de uma Machine Learning. Ainda em construção</p>
+			</div>
+
+		</section>
+
+		<!-- O gráfico !-->
+		
+		<canvas id="graf" style="width:100%;max-width:700px"></canvas>
+		<script src="script.js"></script>
+<!--
+		<section class="footer"></section>
+-->
+	</main>
+</body>
+</html>
